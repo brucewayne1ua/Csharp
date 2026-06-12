@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CIidodWFET8=",
+  "success": true,
+  "projectFilePath": "D:\\projects\\OP\\№4\\course\\course\\course.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexp\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}
