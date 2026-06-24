@@ -1,4 +1,11 @@
-FROM ubuntu:latest
-LABEL authors="netbook"
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+COPY course.csproj .
+RUN dotnet restore
+COPY . .
+RUN dotnet publish -c Release -o /app
 
-ENTRYPOINT ["top", "-b"]
+FROM mcr.microsoft.com/dotnet/runtime:10.0
+WORKDIR /app
+COPY --from=build /app .
+ENTRYPOINT ["dotnet", "course.dll"]

@@ -1,0 +1,6 @@
+services:
+  course:
+    build: .
+    container_name: course
+    stdin_open: true
+    tty: true
